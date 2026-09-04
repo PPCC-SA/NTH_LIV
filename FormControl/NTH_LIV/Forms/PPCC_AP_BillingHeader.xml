@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormsAndObjectsExport Version="010000">
+   <Forms Type="1">
+      <Form Name="PPCC_AP_BillingHeader" Scope="1" ScopeName="[NULL]">
+         <Caption>PPCC_AP_Billing Header</Caption>
+         <Type>3</Type>
+         <StandardOperations>1019</StandardOperations>
+         <Flags>202</Flags>
+         <Height>28.7333333333333</Height>
+         <LeftPos>0</LeftPos>
+         <TopPos>0</TopPos>
+         <Width>109.857142857143</Width>
+         <HelpContextID>-1</HelpContextID>
+         <PaneZeroSize>30</PaneZeroSize>
+         <PrimaryDataSource>PPCC_APBills( ORDERBY(BillNum DESC) )</PrimaryDataSource>
+         <MasterDeviceID>0</MasterDeviceID>
+         <Components>
+            <Component Name="Bill_DateEdit">
+               <DeviceID>-1</DeviceID>
+               <Type>26</Type>
+               <TabOrder>5</TabOrder>
+               <TopPos>2.53333330154419</TopPos>
+               <LeftPos>12.7142858505249</LeftPos>
+               <Height>1.29999995231628</Height>
+               <ListHeight>0</ListHeight>
+               <Width>14</Width>
+               <Caption>C(Bill_DateStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>object.BillDate</DataSource>
+               <Binding>1</Binding>
+               <SelectionEvent>VendNumChg</SelectionEvent>
+               <Flags>513</Flags>
+               <DefaultData>CURDATE()</DefaultData>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdDefault</MenuName>
+               <DefaultFrom>Date()</DefaultFrom>
+               <Post301DataType>DEFAULTVALUE(CURDATE())</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Bill_DateStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="Bill_DateGridCol">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>4</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>60.2857142857143</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12</Width>
+               <Caption>Billing Date</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>FormCollectionGrid</ContainerName>
+               <ContainerSequence>3</ContainerSequence>
+               <DataSource>object.BillDate</DataSource>
+               <Binding>1</Binding>
+               <SelectionEvent>VendNumChg</SelectionEvent>
+               <Flags>512</Flags>
+               <DefaultData>CURDATE()</DefaultData>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdFind</MenuName>
+               <FindFromSpec>Bill_DateGridCol.</FindFromSpec>
+               <DefaultFrom>Date()</DefaultFrom>
+               <Post301DataType>DEFAULTVALUE(CURDATE())</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Billing Date</EffectiveCaption>
+            </Component>
+            <Component Name="Bill_DateStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>4</TabOrder>
+               <TopPos>2.83333325386047</TopPos>
+               <LeftPos>2.14285707473755</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>Billing Date</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>3</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Format>JUSTIFY(R)</Format>
+               <Post301Format />
+               <EffectiveCaption>Billing Date</EffectiveCaption>
+            </Component>
+            <Component Name="Bill_NumEdit">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>2</TabOrder>
+               <TopPos>1</TopPos>
+               <LeftPos>12.7142858505249</LeftPos>
+               <Height>1.29999995231628</Height>
+               <ListHeight>0</ListHeight>
+               <Width>14</Width>
+               <Caption>C(Bill_NumStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>object.BillNum</DataSource>
+               <Binding>1</Binding>
+               <Flags>8193</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdDefault</MenuName>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Bill_NumStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="Bill_NumGridCol">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>1</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>6</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>13</Width>
+               <Caption>Billing No.</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>FormCollectionGrid</ContainerName>
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>object.BillNum</DataSource>
+               <Binding>1</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdFind</MenuName>
+               <FindFromSpec>Bill_NumGridCol.</FindFromSpec>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Billing No.</EffectiveCaption>
+            </Component>
+            <Component Name="Bill_NumStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>1</TabOrder>
+               <TopPos>1.29999995231628</TopPos>
+               <LeftPos>2.14285707473755</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>Billing No.</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>3</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Format>JUSTIFY(R)</Format>
+               <Post301Format />
+               <EffectiveCaption>Billing No.</EffectiveCaption>
+            </Component>
+            <Component Name="BillNumEdit">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>13</TabOrder>
+               <TopPos>11.3999996185303</TopPos>
+               <LeftPos>3.71428561210632</LeftPos>
+               <Height>1.29999995231628</Height>
+               <ListHeight>0</ListHeight>
+               <Width>15</Width>
+               <Caption>C(Bill_NumStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>object.BillNum</DataSource>
+               <Binding>1</Binding>
+               <Flags>513</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>True</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Bill_NumStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="BillStatReport">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>16</TabOrder>
+               <TopPos>2.53333330154419</TopPos>
+               <LeftPos>57.1428565979004</LeftPos>
+               <Height>1.5</Height>
+               <ListHeight>0</ListHeight>
+               <Width>19</Width>
+               <Caption>AP Billing Status Report</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>LinkAPBillingStatusReport</EventToGenerate>
+               <Flags>1</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>AP Billing Status Report</EffectiveCaption>
+            </Component>
+            <Component Name="Due_DateEdit">
+               <DeviceID>-1</DeviceID>
+               <Type>26</Type>
+               <TabOrder>12</TabOrder>
+               <TopPos>2.53333330154419</TopPos>
+               <LeftPos>39.2857131958008</LeftPos>
+               <Height>1.29999995231628</Height>
+               <ListHeight>0</ListHeight>
+               <Width>14</Width>
+               <Caption>C(Due_DateStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>object.DueDate</DataSource>
+               <Binding>1</Binding>
+               <Flags>513</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdDefault</MenuName>
+               <DefaultFrom>Date()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Due_DateStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="Due_DateGridCol">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>5</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>72.2857142857143</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>11.5714285714286</Width>
+               <Caption>Due Pay</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>FormCollectionGrid</ContainerName>
+               <ContainerSequence>4</ContainerSequence>
+               <DataSource>object.DueDate</DataSource>
+               <Binding>1</Binding>
+               <Flags>512</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdFind</MenuName>
+               <FindFromSpec>Due_DateGridCol.</FindFromSpec>
+               <DefaultFrom>Date()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Due Pay</EffectiveCaption>
+            </Component>
+            <Component Name="Due_DateStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>11</TabOrder>
+               <TopPos>2.83333325386047</TopPos>
+               <LeftPos>30.8571434020996</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>7.7142858505249</Width>
+               <Caption>Due Pay</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>3</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Format>JUSTIFY(R)</Format>
+               <Post301Format />
+               <EffectiveCaption>Due Pay</EffectiveCaption>
+            </Component>
+            <Component Name="FormCollectionGrid">
+               <DeviceID>-1</DeviceID>
+               <Type>14</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>28.4666666666667</Height>
+               <ListHeight>0</ListHeight>
+               <Width>29.7142857142857</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>objects</DataSource>
+               <Binding>3</Binding>
+               <Flags>384</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="GenBillPB">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>3</TabOrder>
+               <TopPos>0.799999952316284</TopPos>
+               <LeftPos>39.2857131958008</LeftPos>
+               <Height>1.5</Height>
+               <ListHeight>0</ListHeight>
+               <Width>14</Width>
+               <Caption>Gen Bill No.</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>GenBillNum</EventToGenerate>
+               <Flags>1</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) ENABLEDWHEN(Enabled:#C(GenBillPB), #P(BillNum) = "", "True")</Post301Format>
+               <EffectiveCaption>Gen Bill No.</EffectiveCaption>
+            </Component>
+            <Component Name="groupBox1">
+               <DeviceID>-1</DeviceID>
+               <Type>6</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>-0.0666666701436043</TopPos>
+               <LeftPos>0.857142865657806</LeftPos>
+               <Height>9.33333301544189</Height>
+               <ListHeight>0</ListHeight>
+               <Width>55</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>1</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="LinePB">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>14</TabOrder>
+               <TopPos>7</TopPos>
+               <LeftPos>39.2857131958008</LeftPos>
+               <Height>1.5</Height>
+               <ListHeight>0</ListHeight>
+               <Width>14</Width>
+               <Caption>Billing Line</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>LineLink</EventToGenerate>
+               <Flags>1</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Billing Line</EffectiveCaption>
+            </Component>
+            <Component Name="PreviewBilling">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>15</TabOrder>
+               <TopPos>0.799999952316284</TopPos>
+               <LeftPos>57.1428565979004</LeftPos>
+               <Height>1.5</Height>
+               <ListHeight>0</ListHeight>
+               <Width>19</Width>
+               <Caption>Preview Billing Form</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>Preview</EventToGenerate>
+               <Flags>1</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Preview Billing Form</EffectiveCaption>
+            </Component>
+            <Component Name="Ref_BillNumEdit">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>10</TabOrder>
+               <TopPos>5.59999990463257</TopPos>
+               <LeftPos>19.5714282989502</LeftPos>
+               <Height>1.29999995231628</Height>
+               <ListHeight>0</ListHeight>
+               <Width>33.7142868041992</Width>
+               <Caption>C(Ref_BillNumStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>object.RefBillNum</DataSource>
+               <Binding>1</Binding>
+               <Flags>1</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdDefault</MenuName>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Ref_BillNumStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="Ref_BillNumGridCol">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>6</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>83.8571428571428</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>37</Width>
+               <Caption>Ref. Vendor Billing No.</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>FormCollectionGrid</ContainerName>
+               <ContainerSequence>5</ContainerSequence>
+               <DataSource>object.RefBillNum</DataSource>
+               <Binding>1</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdFind</MenuName>
+               <FindFromSpec>Ref_BillNumGridCol.</FindFromSpec>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Ref. Vendor Billing No.</EffectiveCaption>
+            </Component>
+            <Component Name="Ref_BillNumStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>9</TabOrder>
+               <TopPos>5.89999961853027</TopPos>
+               <LeftPos>2.14285707473755</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>17</Width>
+               <Caption>Ref. Vendor Billing No.</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>3</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Format>JUSTIFY(R)</Format>
+               <Post301Format />
+               <EffectiveCaption>Ref. Vendor Billing No.</EffectiveCaption>
+            </Component>
+            <Component Name="Vend_DescEdit">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>8</TabOrder>
+               <TopPos>4.06666660308838</TopPos>
+               <LeftPos>23.2857151031494</LeftPos>
+               <Height>1.29999995231628</Height>
+               <ListHeight>0</ListHeight>
+               <Width>30</Width>
+               <Caption>C(Vend_DescStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>object.VendDesc</DataSource>
+               <Binding>1</Binding>
+               <Flags>33</Flags>
+               <ReadOnly>True</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdDefault</MenuName>
+               <PropertyClassName>Name</PropertyClassName>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Vend_DescStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="Vend_DescGridCol">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>3</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>29.2857142857143</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>31</Width>
+               <Caption>Vendor Name</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>FormCollectionGrid</ContainerName>
+               <ContainerSequence>2</ContainerSequence>
+               <DataSource>object.VendDesc</DataSource>
+               <Binding>1</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdFind</MenuName>
+               <FindFromSpec>Vend_DescGridCol.</FindFromSpec>
+               <DefaultFrom>VendorNameVar()</DefaultFrom>
+               <PropertyClassName>Name</PropertyClassName>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Vendor Name</EffectiveCaption>
+            </Component>
+            <Component Name="Vend_NumEdit">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>7</TabOrder>
+               <TopPos>4.06666660308838</TopPos>
+               <LeftPos>12.7142858505249</LeftPos>
+               <Height>1.29999995231628</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>C(Vend_NumStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>object.VendNum</DataSource>
+               <Binding>1</Binding>
+               <SelectionEvent>VendNumChg</SelectionEvent>
+               <Flags>8705</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdDetailsAddFind</MenuName>
+               <MaintainFromSpec>Vendors( PROPERTY(VendNum) )</MaintainFromSpec>
+               <DefaultFrom>VendNum(VendDesc)</DefaultFrom>
+               <PropertyClassName>VendNum</PropertyClassName>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Vend_NumStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="Vend_NumGridCol">
+               <DeviceID>-1</DeviceID>
+               <Type>15</Type>
+               <TabOrder>2</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>19</LeftPos>
+               <Height>13</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10.2857142857143</Width>
+               <Caption>Vendor</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName>FormCollectionGrid</ContainerName>
+               <ContainerSequence>1</ContainerSequence>
+               <DataSource>object.VendNum</DataSource>
+               <Binding>1</Binding>
+               <SelectionEvent>VendNumChg</SelectionEvent>
+               <Flags>8192</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <MenuName>StdDetailsAddFind</MenuName>
+               <MaintainFromSpec>Vendors( PROPERTY(VendNum) )</MaintainFromSpec>
+               <DefaultFrom>VendNum(VendDesc)</DefaultFrom>
+               <PropertyClassName>VendNum</PropertyClassName>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Vendor</EffectiveCaption>
+            </Component>
+            <Component Name="Vend_NumStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>6</TabOrder>
+               <TopPos>4.36666679382324</TopPos>
+               <LeftPos>2.14285707473755</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>Vendor</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>3</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Format>JUSTIFY(R)</Format>
+               <Post301Format />
+               <EffectiveCaption>Vendor</EffectiveCaption>
+            </Component>
+         </Components>
+         <EventHandlers>
+            <EventHandler Name="GenBillNum" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>GenBillNum()</Response>
+            </EventHandler>
+            <EventHandler Name="GetLstBillNum" Sequence="0">
+               <ResponseType>0</ResponseType>
+               <Response>PPCC_APBills.PPCC_ApBillGetBillNumSp( PARMS(VAR V(TypeName), RVAR V(LPrefix), RVAR V(LRunNum)) )</Response>
+            </EventHandler>
+            <EventHandler Name="LineLink" Sequence="0">
+               <ResponseType>6</ResponseType>
+               <Response>PPCC_AP_BillingLine( LINKBY(BillNum=BillNum,VendNum=VendNum) RLACS() )</Response>
+            </EventHandler>
+            <EventHandler Name="LinkAPBillingStatusReport" Sequence="0">
+               <ResponseType>7</ResponseType>
+               <Response>PPCC_AP_BillingStatusReport( )</Response>
+            </EventHandler>
+            <EventHandler Name="Preview" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>AssignValue()</Response>
+            </EventHandler>
+            <EventHandler Name="Preview" Sequence="1">
+               <ResponseType>40</ResponseType>
+               <Response>TASKNAME(V(BGTaskName))TASKPARMS(V(BGTaskParms))</Response>
+            </EventHandler>
+            <EventHandler Name="StdFormInitCompleted" Sequence="0">
+               <ResponseType>21</ResponseType>
+               <Response>StdFormRefresh(  )</Response>
+            </EventHandler>
+            <EventHandler Name="StdFormSaveCompleted" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>UpdateLastBillNum()</Response>
+            </EventHandler>
+            <EventHandler Name="VendNumChg" Sequence="0">
+               <ResponseType>0</ResponseType>
+               <Response>PPCC_APBills.PPCC_ApBillGetDueDateSp( PARMS(VAR P(VendNum), VAR P(BillDate), RVAR P(DueDate)) ERRORMESSAGE(mBackEndMessage) SUCCESSMESSAGE(mBackEndMessage) )</Response>
+            </EventHandler>
+         </EventHandlers>
+         <Variables>
+            <Variable Name="BGTaskName">
+               <Value>PPCC_APBilling</Value>
+               <Value2 />
+               <Value3 />
+               <Description />
+            </Variable>
+            <Variable Name="BGTaskParms">
+               <Value>V(Billnum),V(Vendnum)</Value>
+               <Value2 />
+               <Value3 />
+               <Description />
+            </Variable>
+            <Variable Name="TypeName">
+               <Value>LastApBill</Value>
+               <Value2 />
+               <Value3 />
+               <Description />
+            </Variable>
+         </Variables>
+         <Script Language="Visual Basic">
+            <ScriptLines>
+               <ScriptLine>Option Explicit On</ScriptLine>
+               <ScriptLine>Option Strict On</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>Imports System</ScriptLine>
+               <ScriptLine>Imports Microsoft.VisualBasic</ScriptLine>
+               <ScriptLine>Imports Mongoose.IDO.Protocol</ScriptLine>
+               <ScriptLine>Imports Mongoose.Scripting</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>Namespace Mongoose.FormScripts</ScriptLine>
+               <ScriptLine>Public class PPCC_AP_BillingHeader</ScriptLine>
+               <ScriptLine>Inherits FormScript</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>        Sub GenBillNum()</ScriptLine>
+               <ScriptLine>            Dim BillNum As String = ""</ScriptLine>
+               <ScriptLine>            Dim FLen As Integer = 0</ScriptLine>
+               <ScriptLine>            Dim LLen As Integer = 0</ScriptLine>
+               <ScriptLine>            Dim ALen As Integer = 12</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            ThisForm.GenerateEvent("GetLstBillNum")</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            If ThisForm.Variables("LPrefix").Value = "" Then</ScriptLine>
+               <ScriptLine>                MsgBox("Must Create User Defined Type Name 'LastApBill' Before !!", _</ScriptLine>
+               <ScriptLine>                           CType(MsgBoxStyle.OkOnly + MsgBoxStyle.Information, MsgBoxStyle), "SyteLine")</ScriptLine>
+               <ScriptLine>                Exit Sub</ScriptLine>
+               <ScriptLine>            End If</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            If ThisForm.Variables("LPre").Value = "" Or ThisForm.Variables("LNum").Value = "" Then</ScriptLine>
+               <ScriptLine>                ThisForm.Variables("LPre").Value = ThisForm.Variables("LPrefix").Value</ScriptLine>
+               <ScriptLine>                ThisForm.Variables("LNum").Value = ThisForm.Variables("LRunNum").Value</ScriptLine>
+               <ScriptLine>            Else</ScriptLine>
+               <ScriptLine>                If ThisForm.Variables("LRunNum").Value &gt;= ThisForm.Variables("LNum").Value Then</ScriptLine>
+               <ScriptLine>                    ThisForm.Variables("LNum").Value = ThisForm.Variables("LRunNum").Value</ScriptLine>
+               <ScriptLine>                End If</ScriptLine>
+               <ScriptLine>            End If</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            ThisForm.Variables("LNum").Value = CStr(CDbl(ThisForm.Variables("LNum").Value) + 1)</ScriptLine>
+               <ScriptLine>            FLen = Len(ThisForm.Variables("LPre").Value)</ScriptLine>
+               <ScriptLine>            LLen = Len(ThisForm.Variables("LNum").Value)</ScriptLine>
+               <ScriptLine>            Select Case ALen - FLen - LLen</ScriptLine>
+               <ScriptLine>                Case 0</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 1</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "0" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 2</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "00" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 3</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "000" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 4</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "0000" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 5</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "00000" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 6</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "000000" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 7</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "0000000" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 8</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "00000000" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 9</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "000000000" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 10</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "0000000000" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>                Case 11</ScriptLine>
+               <ScriptLine>                    BillNum = ThisForm.Variables("LPre").Value &amp; "00000000000" &amp; ThisForm.Variables("LNum").Value</ScriptLine>
+               <ScriptLine>            End Select</ScriptLine>
+               <ScriptLine>            ThisForm.PrimaryIDOCollection.SetCurrentObjectPropertyPlusModifyRefresh("BillNum", BillNum)</ScriptLine>
+               <ScriptLine>        End Sub</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>        Sub UpdateLastBillNum()</ScriptLine>
+               <ScriptLine>            Dim Rs As InvokeResponseData</ScriptLine>
+               <ScriptLine>            Rs = Me.IDOClient.Invoke("PPCC_APBills", "PPCC_SetUserDefinedTypeValuesSp", "LastApBill", ThisForm.Variables("LPre").Value)</ScriptLine>
+               <ScriptLine>        End Sub</ScriptLine>
+               <ScriptLine>        Sub AssignValue()</ScriptLine>
+               <ScriptLine>            ThisForm.Variables("Vendnum").Value = ThisForm.Components("Vend_NumEdit").Text</ScriptLine>
+               <ScriptLine>            ThisForm.Variables("Billnum").Value = ThisForm.Components("Bill_NumEdit").Text</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>        End Sub</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>End Class</ScriptLine>
+               <ScriptLine>End Namespace</ScriptLine>
+            </ScriptLines>
+         </Script>
+      </Form>
+   </Forms>
+</FormsAndObjectsExport>
