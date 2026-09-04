@@ -1,0 +1,1956 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormsAndObjectsExport Version="010000">
+   <Forms Type="1">
+      <Form Name="PPCC_AccountsPayableAgingReport" Scope="1" ScopeName="[NULL]">
+         <Caption>PPCC AccountsPayableAgingReport</Caption>
+         <Type>3</Type>
+         <StandardOperations>0</StandardOperations>
+         <Flags>968</Flags>
+         <Height>35.0666666666667</Height>
+         <LeftPos>0</LeftPos>
+         <TopPos>0</TopPos>
+         <Width>139.428571428571</Width>
+         <HelpFileName>sl_goto.htm#Forms\aptopics/accounts_payable_aging_report.htm</HelpFileName>
+         <HelpContextID>-1</HelpContextID>
+         <PaneZeroSize>0</PaneZeroSize>
+         <PrimaryDataSource />
+         <MasterDeviceID>0</MasterDeviceID>
+         <Components>
+            <Component Name="AgingBasisEdit">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>1</TabOrder>
+               <TopPos>1.13</TopPos>
+               <LeftPos>16.142857</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>13</Width>
+               <Caption>C(AgingBasisStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.AgingBasis(INITIALVALUE(V(ApparmInvDue)))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\a/aging_basis_accounts_payable_parameters.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>AgingBasis2Var()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(AgingBasisStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="AgingBasisStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>71</TabOrder>
+               <TopPos>1.396667</TopPos>
+               <LeftPos>4.604762</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10.857143</Width>
+               <Caption>sAgingBasis</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sAgingBasis</EffectiveCaption>
+            </Component>
+            <Component Name="AgingBucket">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>28</TabOrder>
+               <TopPos>15.8</TopPos>
+               <LeftPos>69.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>10</ListHeight>
+               <Width>5</Width>
+               <Caption>C(AgingBucketStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>47</ContainerSequence>
+               <DataSource>variables.AgingBucket(INITIALVALUE(0))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\a/aging_bucket_report_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <MenuName>StdDefault</MenuName>
+               <DefaultFrom>Sortby6Var(0,0,1,1,2,2,3,3,4,4,5,5)</DefaultFrom>
+               <Post301DataType>LENGTH(1)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(AgingBucketStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="AgingBucketStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>39</TabOrder>
+               <TopPos>16.0666666666667</TopPos>
+               <LeftPos>57.319048</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12.142857</Width>
+               <Caption>sAgingBucket</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sAgingBucket</EffectiveCaption>
+            </Component>
+            <Component Name="AgingDate">
+               <DeviceID>-1</DeviceID>
+               <Type>26</Type>
+               <TabOrder>2</TabOrder>
+               <TopPos>2.566667</TopPos>
+               <LeftPos>16.142857</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>13</Width>
+               <Caption>C(AgingDateStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.AgingDate(INITIALVALUE(CURDATE()))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\a/aging_date_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DateVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(AgingDateStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="AgingDateIncrement">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>3</TabOrder>
+               <TopPos>2.566667</TopPos>
+               <LeftPos>29.714286</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>13.428571</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.AgingDateIncrement(INITIALVALUE(0))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\I/increment_date.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DateIncrementVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sIncrementDate</EffectiveCaption>
+            </Component>
+            <Component Name="AgingDateOffset">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>14</TabOrder>
+               <TopPos>2.566667</TopPos>
+               <LeftPos>43.928571</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.AgingDateOffset</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>True</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <DefaultFrom>DateOffsetVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="AgingDateStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>12</TabOrder>
+               <TopPos>2.866667</TopPos>
+               <LeftPos>4.604762</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10.857143</Width>
+               <Caption>sAgingDate</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sAgingDate</EffectiveCaption>
+            </Component>
+            <Component Name="BackgroundQueue">
+               <DeviceID>-1</DeviceID>
+               <Type>10</Type>
+               <TabOrder>54</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>s&amp;Background</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>RunBackgroundQueue</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Menus\Actions/background_actions_menu.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>s&amp;Background</EffectiveCaption>
+            </Component>
+            <Component Name="Box">
+               <DeviceID>-1</DeviceID>
+               <Type>6</Type>
+               <TabOrder>6</TabOrder>
+               <TopPos>0.13</TopPos>
+               <LeftPos>50.678571</LeftPos>
+               <Height>5.85</Height>
+               <ListHeight>0</ListHeight>
+               <Width>57.571429</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <DefaultFrom>StdGroupBox()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="Box1">
+               <DeviceID>-1</DeviceID>
+               <Type>6</Type>
+               <TabOrder>19</TabOrder>
+               <TopPos>14.8</TopPos>
+               <LeftPos>1</LeftPos>
+               <Height>11.4</Height>
+               <ListHeight>0</ListHeight>
+               <Width>53.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <DefaultFrom>StdGroupBox()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="CategoryStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>8.46666666666667</TopPos>
+               <LeftPos>6</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>9</Width>
+               <Caption>Category</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>BTF() AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>Category</EffectiveCaption>
+            </Component>
+            <Component Name="ConsolidateVendors">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>11</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>78.142857</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>24</Width>
+               <Caption>sConsolidateVendors</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.ConsolidateVendors(INITIALVALUE(0))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\c/consolidate_vendor_ap_aging_report.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>BooleanVar()</DefaultFrom>
+               <Post301DataType>BOOLTRUE(1) BOOLFALSE(0)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sConsolidateVendors</EffectiveCaption>
+            </Component>
+            <Component Name="CurrencyCodeEnding">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>18</TabOrder>
+               <TopPos>12.9333333333333</TopPos>
+               <LeftPos>62</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>7</Width>
+               <Caption>C(CurrencyCodeStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.CurrencyCodeEnding</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\c/currency_code_reportutility_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>CurrCodeVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(CurrencyCodeStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="CurrencyCodeStarting">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>17</TabOrder>
+               <TopPos>12.9333333333333</TopPos>
+               <LeftPos>16</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>7</Width>
+               <Caption>C(CurrencyCodeStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.CurrencyCodeStarting</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\c/currency_code_reportutility_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>CurrCodeVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(CurrencyCodeStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="CurrencyCodeStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>28</TabOrder>
+               <TopPos>13.2</TopPos>
+               <LeftPos>2.461905</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>13</Width>
+               <Caption>sCurrencyCode</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sCurrencyCode</EffectiveCaption>
+            </Component>
+            <Component Name="CutoffDate">
+               <DeviceID>-1</DeviceID>
+               <Type>26</Type>
+               <TabOrder>4</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>16.142857</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>13</Width>
+               <Caption>C(CutoffDateStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.CutoffDate(INITIALVALUE(CURDATE()))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\c/cutoff_date_range_field.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DateVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(CutoffDateStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="CutoffDateIncrement">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>5</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>29.714286</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>13.428571</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.CutoffDateIncrement(INITIALVALUE(0))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\I/increment_date.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DateIncrementVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sIncrementDate</EffectiveCaption>
+            </Component>
+            <Component Name="CutoffDateOffset">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>18</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>43.928571</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.CutoffDateOffset</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>True</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <DefaultFrom>DateOffsetVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="CutoffDateStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>15</TabOrder>
+               <TopPos>4.3</TopPos>
+               <LeftPos>4.604762</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10.857143</Width>
+               <Caption>sCutoffDate</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sCutoffDate</EffectiveCaption>
+            </Component>
+            <Component Name="Days0">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>29</TabOrder>
+               <TopPos>17.2</TopPos>
+               <LeftPos>69.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>8</Width>
+               <Caption>C(LTEStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days0</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\l/less_than_equal_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl) MASK(-&gt;&gt;&gt;&gt;)</Post301Format>
+               <EffectiveCaption>C(LTEStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="Days0Description">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>30</TabOrder>
+               <TopPos>17.2</TopPos>
+               <LeftPos>86.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12</Width>
+               <Caption>C(DaysStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days0Description</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\d/days_report_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysRangeVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(DaysStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="Days1">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>31</TabOrder>
+               <TopPos>18.7333333333333</TopPos>
+               <LeftPos>69.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>8</Width>
+               <Caption>C(LTEStatic1)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days1</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\l/less_than_equal_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl) MASK(-&gt;&gt;&gt;&gt;)</Post301Format>
+               <EffectiveCaption>C(LTEStatic1)</EffectiveCaption>
+            </Component>
+            <Component Name="Days1Description">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>32</TabOrder>
+               <TopPos>18.7333333333333</TopPos>
+               <LeftPos>86.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12</Width>
+               <Caption>C(Days1Static)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days1Description</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\d/days_report_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysRangeVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Days1Static)</EffectiveCaption>
+            </Component>
+            <Component Name="Days1Static">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>47</TabOrder>
+               <TopPos>19</TopPos>
+               <LeftPos>79.857143</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>6.428571</Width>
+               <Caption>sDays</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sDays</EffectiveCaption>
+            </Component>
+            <Component Name="Days2">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>33</TabOrder>
+               <TopPos>20.2</TopPos>
+               <LeftPos>69.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>8</Width>
+               <Caption>C(LTEStatic2)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days2</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\l/less_than_equal_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl) MASK(-&gt;&gt;&gt;&gt;)</Post301Format>
+               <EffectiveCaption>C(LTEStatic2)</EffectiveCaption>
+            </Component>
+            <Component Name="Days2Description">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>34</TabOrder>
+               <TopPos>20.2</TopPos>
+               <LeftPos>86.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12</Width>
+               <Caption>C(Days2Static)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days2Description</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\d/days_report_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysRangeVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Days2Static)</EffectiveCaption>
+            </Component>
+            <Component Name="Days2Static">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>51</TabOrder>
+               <TopPos>20.4666666666667</TopPos>
+               <LeftPos>79.857143</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>6.428571</Width>
+               <Caption>sDays</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sDays</EffectiveCaption>
+            </Component>
+            <Component Name="Days3">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>35</TabOrder>
+               <TopPos>21.6666666666667</TopPos>
+               <LeftPos>69.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>8</Width>
+               <Caption>C(LTEStatic3)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days3</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\l/less_than_equal_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl) MASK(-&gt;&gt;&gt;&gt;)</Post301Format>
+               <EffectiveCaption>C(LTEStatic3)</EffectiveCaption>
+            </Component>
+            <Component Name="Days3Description">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>36</TabOrder>
+               <TopPos>21.6666666666667</TopPos>
+               <LeftPos>86.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12</Width>
+               <Caption>C(Days3Static)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days3Description</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\d/days_report_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysRangeVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Days3Static)</EffectiveCaption>
+            </Component>
+            <Component Name="Days3Static">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>55</TabOrder>
+               <TopPos>21.9333333333333</TopPos>
+               <LeftPos>79.857143</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>6.428571</Width>
+               <Caption>sDays</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sDays</EffectiveCaption>
+            </Component>
+            <Component Name="Days4">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>37</TabOrder>
+               <TopPos>23.1333333333333</TopPos>
+               <LeftPos>69.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>8</Width>
+               <Caption>C(LTEStatic4)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days4</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\l/less_than_equal_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl) MASK(-&gt;&gt;&gt;&gt;)</Post301Format>
+               <EffectiveCaption>C(LTEStatic4)</EffectiveCaption>
+            </Component>
+            <Component Name="Days4Description">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>38</TabOrder>
+               <TopPos>23.1333333333333</TopPos>
+               <LeftPos>86.857143</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12</Width>
+               <Caption>C(Days4Static)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Days4Description</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\d/days_report_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>DaysRangeVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(Days4Static)</EffectiveCaption>
+            </Component>
+            <Component Name="Days4Static">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>59</TabOrder>
+               <TopPos>23.4</TopPos>
+               <LeftPos>79.857143</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>6.428571</Width>
+               <Caption>sDays</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sDays</EffectiveCaption>
+            </Component>
+            <Component Name="DaysStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>43</TabOrder>
+               <TopPos>17.5333333333333</TopPos>
+               <LeftPos>79.857143</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>6.428571</Width>
+               <Caption>sDays</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sDays</EffectiveCaption>
+            </Component>
+            <Component Name="DisplayHeader1">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>1.06666666666667</TopPos>
+               <LeftPos>77.8571428571429</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>24</Width>
+               <Caption>Show Detail</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.DisplayHeader(INITIALVALUE(V(Parm_DisplayReportHeaders)))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>syteline.chm</HelpFileName>
+               <HelpContextID>900032800</HelpContextID>
+               <DefaultFrom>DisplayHeaderVar()</DefaultFrom>
+               <Post301Format>BTF() AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>Show Detail</EffectiveCaption>
+            </Component>
+            <Component Name="EndingStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>21</TabOrder>
+               <TopPos>6.6</TopPos>
+               <LeftPos>62</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>sEnding</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>1</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>sEnding</EffectiveCaption>
+            </Component>
+            <Component Name="GetOptionsMenuItem">
+               <DeviceID>-1</DeviceID>
+               <Type>10</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>s&amp;GetOptions</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>32484</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>RunGetOptions</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Menus\Actions/get_options_actions_menu.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>s&amp;GetOptions</EffectiveCaption>
+            </Component>
+            <Component Name="GotoActivitiesFolderToolbarButton">
+               <DeviceID>-1</DeviceID>
+               <Type>11</Type>
+               <TabOrder>500</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>sGoToActivitiesFolder</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>GoToActivitiesFolder</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <BitmapFileName>GotoActivities.png</BitmapFileName>
+               <HelpFileName>sl_goto.htm#Buttons\g/GotoActivitiesFolderToolbarButton.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sGoToActivitiesFolder</EffectiveCaption>
+            </Component>
+            <Component Name="GotoFilesFolderToolbarButton">
+               <DeviceID>-1</DeviceID>
+               <Type>11</Type>
+               <TabOrder>502</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>sGoToFilesFolder</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>GoToFilesFolder</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <BitmapFileName>GotoFiles.png</BitmapFileName>
+               <HelpFileName>sl_goto.htm#Buttons\g/GotoFilesFolderToolbarButton.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sGoToFilesFolder</EffectiveCaption>
+            </Component>
+            <Component Name="GotoMaintenanceFolderToolbarButton">
+               <DeviceID>-1</DeviceID>
+               <Type>11</Type>
+               <TabOrder>501</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>sGoToMaintenanceFolder</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>GoToMaintenanceFolder</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <BitmapFileName>GotoMaintenance.png</BitmapFileName>
+               <HelpFileName>sl_goto.htm#Buttons\g/GotoMaintenanceFolderToolbarButton.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sGoToMaintenanceFolder</EffectiveCaption>
+            </Component>
+            <Component Name="GotoQueriesFolderToolbarButton">
+               <DeviceID>-1</DeviceID>
+               <Type>11</Type>
+               <TabOrder>504</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>sGoToQueriesFolder</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>GoToQueriesFolder</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <BitmapFileName>GotoQueries.png</BitmapFileName>
+               <HelpFileName>sl_goto.htm#Buttons\g/GotoQueriesFolderToolbarButton.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sGoToQueriesFolder</EffectiveCaption>
+            </Component>
+            <Component Name="GotoReportsFolderToolbarButton">
+               <DeviceID>-1</DeviceID>
+               <Type>11</Type>
+               <TabOrder>503</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>sGoToReportsFolder</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>GoToReportsFolder</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <BitmapFileName>GotoReports.png</BitmapFileName>
+               <HelpFileName>sl_goto.htm#Buttons\g/GotoReportsFolderToolbarButton.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sGoToReportsFolder</EffectiveCaption>
+            </Component>
+            <Component Name="GotoUtilitiesFolderToolbarButton">
+               <DeviceID>-1</DeviceID>
+               <Type>11</Type>
+               <TabOrder>500</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>sGoToUtilitiesFolder</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>GoToUtilitiesFolder</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <BitmapFileName>GotoUtilities.png</BitmapFileName>
+               <HelpFileName>sl_goto.htm#Buttons\g/GotoUtilitiesFolderToolbarButton.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sGoToUtilitiesFolder</EffectiveCaption>
+            </Component>
+            <Component Name="LTEStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>41</TabOrder>
+               <TopPos>17.5333333333333</TopPos>
+               <LeftPos>57.319048</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12.142857</Width>
+               <Caption>s&lt;=</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>s&lt;=</EffectiveCaption>
+            </Component>
+            <Component Name="LTEStatic1">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>45</TabOrder>
+               <TopPos>19</TopPos>
+               <LeftPos>57.319048</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12.142857</Width>
+               <Caption>s&lt;=</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>s&lt;=</EffectiveCaption>
+            </Component>
+            <Component Name="LTEStatic2">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>49</TabOrder>
+               <TopPos>20.4666666666667</TopPos>
+               <LeftPos>57.319048</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12.142857</Width>
+               <Caption>s&lt;=</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>s&lt;=</EffectiveCaption>
+            </Component>
+            <Component Name="LTEStatic3">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>53</TabOrder>
+               <TopPos>21.9333333333333</TopPos>
+               <LeftPos>57.319048</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12.142857</Width>
+               <Caption>s&lt;=</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>s&lt;=</EffectiveCaption>
+            </Component>
+            <Component Name="LTEStatic4">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>57</TabOrder>
+               <TopPos>23.4</TopPos>
+               <LeftPos>57.319048</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12.142857</Width>
+               <Caption>s&lt;=</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>s&lt;=</EffectiveCaption>
+            </Component>
+            <Component Name="NameEnding">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>16</TabOrder>
+               <TopPos>11.4666666666667</TopPos>
+               <LeftPos>62</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>45</Width>
+               <Caption>C(NameStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.NameEnding</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\n/name_report_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>VendorNameVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(NameStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="NameStarting">
+               <DeviceID>-1</DeviceID>
+               <Type>1</Type>
+               <TabOrder>15</TabOrder>
+               <TopPos>11.4666666666667</TopPos>
+               <LeftPos>16</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>45</Width>
+               <Caption>C(NameStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.NameStarting</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\n/name_report_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>VendorNameVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(NameStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="NameStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>25</TabOrder>
+               <TopPos>11.7333333333333</TopPos>
+               <LeftPos>2.461905</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>13</Width>
+               <Caption>sName</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sName</EffectiveCaption>
+            </Component>
+            <Component Name="PaymentHold">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>26</TabOrder>
+               <TopPos>4</TopPos>
+               <LeftPos>64</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>sPaymentHold</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.PaymentHold(INITIALVALUE(B))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\p/payment_hold_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>Sortby3Var(Y,sYes,N,sNo,B,sBoth)</DefaultFrom>
+               <Post301DataType>LENGTH(6)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sPaymentHold</EffectiveCaption>
+            </Component>
+            <Component Name="PaymentHoldStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>4.3</TopPos>
+               <LeftPos>53.4619047619048</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10.1428571428571</Width>
+               <Caption>sPaymentHold</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sPaymentHold</EffectiveCaption>
+            </Component>
+            <Component Name="PreviewButton">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>39</TabOrder>
+               <TopPos>26.6</TopPos>
+               <LeftPos>39.12</LeftPos>
+               <Height>1.4</Height>
+               <ListHeight>0</ListHeight>
+               <Width>15</Width>
+               <Caption>sPrev&amp;iew</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>PreviewReport</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Buttons\p/preview_button.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <MenuName>StdDefault</MenuName>
+               <DefaultFrom>Button()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <EffectiveCaption>sPrev&amp;iew</EffectiveCaption>
+            </Component>
+            <Component Name="PrintAll">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>24</TabOrder>
+               <TopPos>21.6</TopPos>
+               <LeftPos>8.571429</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>31</Width>
+               <Caption>sPrintAllPostedTransactions</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.PrintAll(INITIALVALUE(0))</DataSource>
+               <Binding>6</Binding>
+               <SelectionEvent>PrintAllPostedChanged</SelectionEvent>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\p/print_all_posted_transactions_ap_aging_report.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>BooleanVar()</DefaultFrom>
+               <Post301DataType>BOOLTRUE(1) BOOLFALSE(0)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sPrintAllPostedTransactions</EffectiveCaption>
+            </Component>
+            <Component Name="PrintButton">
+               <DeviceID>-1</DeviceID>
+               <Type>8</Type>
+               <TabOrder>40</TabOrder>
+               <TopPos>26.6</TopPos>
+               <LeftPos>54.88</LeftPos>
+               <Height>1.4</Height>
+               <ListHeight>0</ListHeight>
+               <Width>15</Width>
+               <Caption>sP&amp;rint</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>GenerateReport</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Buttons\p/print_button.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <MenuName>StdDefault</MenuName>
+               <DefaultFrom>Button()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(C)</Post301Format>
+               <EffectiveCaption>sP&amp;rint</EffectiveCaption>
+            </Component>
+            <Component Name="PrintOpenPaymentsCheck">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>25</TabOrder>
+               <TopPos>23.0666666666667</TopPos>
+               <LeftPos>8.571429</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>31</Width>
+               <Caption>sPrintOpenPayments</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.PrintOpenPayments(INITIALVALUE(0))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <DefaultData>1</DefaultData>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\p/print_open_payments_customer_statements.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>BooleanVar()</DefaultFrom>
+               <Post301DataType>BOOLTRUE(1) DEFAULTVALUE(1)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sPrintOpenPayments</EffectiveCaption>
+            </Component>
+            <Component Name="RangeBox">
+               <DeviceID>-1</DeviceID>
+               <Type>6</Type>
+               <TabOrder>12</TabOrder>
+               <TopPos>5.73</TopPos>
+               <LeftPos>1</LeftPos>
+               <Height>9</Height>
+               <ListHeight>0</ListHeight>
+               <Width>107.142857142857</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <DefaultFrom>StdGroupBox()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="SelectPrinterToolbarButton">
+               <DeviceID>-1</DeviceID>
+               <Type>11</Type>
+               <TabOrder>505</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>sSelectPrinter</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>SelectPrinter</EventToGenerate>
+               <Flags>38617376</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <BitmapFileName>SelectPrinter.png</BitmapFileName>
+               <HelpContextID>1246576928</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sSelectPrinter</EffectiveCaption>
+            </Component>
+            <Component Name="ShowAct">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>23</TabOrder>
+               <TopPos>20.1333333333333</TopPos>
+               <LeftPos>8.571429</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>31</Width>
+               <Caption>sShowActiveTransactionsOnly</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.ShowAct(INITIALVALUE(1))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\s/show_active_trx_only_reportutility_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>BooleanVar()</DefaultFrom>
+               <Post301DataType>BOOLTRUE(1) BOOLFALSE(0)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sShowActiveTransactionsOnly</EffectiveCaption>
+            </Component>
+            <Component Name="SiteGroup">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>7</TabOrder>
+               <TopPos>1.13</TopPos>
+               <LeftPos>64</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>11</Width>
+               <Caption>C(SiteGroupStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.SiteGroup(INITIALVALUE(V(Parm_SiteGroup)))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\m/multi_site_group_id_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>SiteGroupVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>C(SiteGroupStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="SiteGroupStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>5</TabOrder>
+               <TopPos>1.39666666666667</TopPos>
+               <LeftPos>51.4619047619048</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>12</Width>
+               <Caption>sSiteGroup</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sSiteGroup</EffectiveCaption>
+            </Component>
+            <Component Name="SortBy">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>8</TabOrder>
+               <TopPos>2.56666666666667</TopPos>
+               <LeftPos>64</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>10</ListHeight>
+               <Width>10</Width>
+               <Caption>C(SortbyStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>47</ContainerSequence>
+               <DataSource>variables.SortBy(INITIALVALUE(1))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\s/sort_by_customervendor_report.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <MenuName>StdDefault</MenuName>
+               <DefaultFrom>SortBy2Var(1,sNumber,0,sName)</DefaultFrom>
+               <Post301DataType>LENGTH(6)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(SortbyStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="SortByCurrency">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>10</TabOrder>
+               <TopPos>2.566667</TopPos>
+               <LeftPos>78.142857</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>24</Width>
+               <Caption>sSortByCurrency</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.SortByCurrency(INITIALVALUE(0))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\s/sort_by_currency_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>BooleanVar()</DefaultFrom>
+               <Post301DataType>BOOLTRUE(1) BOOLFALSE(0)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sSortByCurrency</EffectiveCaption>
+            </Component>
+            <Component Name="SortbyStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>7</TabOrder>
+               <TopPos>2.86666666666667</TopPos>
+               <LeftPos>53.4619047619048</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10.1428571428571</Width>
+               <Caption>sSortby</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sSortby</EffectiveCaption>
+            </Component>
+            <Component Name="SourceBox">
+               <DeviceID>-1</DeviceID>
+               <Type>6</Type>
+               <TabOrder>27</TabOrder>
+               <TopPos>14.8</TopPos>
+               <LeftPos>54.93</LeftPos>
+               <Height>11.4</Height>
+               <ListHeight>0</ListHeight>
+               <Width>53.5</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <DefaultFrom>StdGroupBox()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="SourceBox1">
+               <DeviceID>-1</DeviceID>
+               <Type>6</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>0.13</TopPos>
+               <LeftPos>1.092857</LeftPos>
+               <Height>5.85</Height>
+               <ListHeight>0</ListHeight>
+               <Width>49.142857</Width>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <DefaultFrom>StdGroupBox()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+            </Component>
+            <Component Name="StartingStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>20</TabOrder>
+               <TopPos>6.6</TopPos>
+               <LeftPos>16</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>sStarting</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>16</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(L)</Post301Format>
+               <EffectiveCaption>sStarting</EffectiveCaption>
+            </Component>
+            <Component Name="StoreOptionsMenuItem">
+               <DeviceID>-1</DeviceID>
+               <Type>10</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>0</TopPos>
+               <LeftPos>0</LeftPos>
+               <Height>0</Height>
+               <ListHeight>0</ListHeight>
+               <Width>0</Width>
+               <Caption>s&amp;StoreOptions</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>32484</ContainerSequence>
+               <Binding>0</Binding>
+               <EventToGenerate>RunStoreOptions</EventToGenerate>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Menus\Actions/store_options_actions_menu.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>s&amp;StoreOptions</EffectiveCaption>
+            </Component>
+            <Component Name="Suppress">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>20</TabOrder>
+               <TopPos>15.8</TopPos>
+               <LeftPos>8.571429</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>31</Width>
+               <Caption>sSuppressZeroBalanceVouchers</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Suppress(INITIALVALUE(1))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\s/suppress_zero_balance_vouchers.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>BooleanVar()</DefaultFrom>
+               <Post301DataType>BOOLTRUE(1) BOOLFALSE(0)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sSuppressZeroBalanceVouchers</EffectiveCaption>
+            </Component>
+            <Component Name="Translate">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>21</TabOrder>
+               <TopPos>17.2666666666667</TopPos>
+               <LeftPos>8.571429</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>31</Width>
+               <Caption>sTranslateToDomesticCurrency</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.Translate(INITIALVALUE(1))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\t/translate_to_domestic_currency_report_range.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>BooleanVar()</DefaultFrom>
+               <Post301DataType>BOOLTRUE(1) BOOLFALSE(0)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sTranslateToDomesticCurrency</EffectiveCaption>
+            </Component>
+            <Component Name="UseHist">
+               <DeviceID>-1</DeviceID>
+               <Type>5</Type>
+               <TabOrder>22</TabOrder>
+               <TopPos>18.6666666666667</TopPos>
+               <LeftPos>8.571429</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>31</Width>
+               <Caption>sUseHistoricalCurrencyRate</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.UseHist(INITIALVALUE(1))</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\u/use_historical_currency_rate_report_option.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>BooleanVar()</DefaultFrom>
+               <Post301DataType>BOOLTRUE(1) BOOLFALSE(0)</Post301DataType>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>sUseHistoricalCurrencyRate</EffectiveCaption>
+            </Component>
+            <Component Name="VendorEnding">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>14</TabOrder>
+               <TopPos>10</TopPos>
+               <LeftPos>62</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>C(VendorStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.VendorEnding</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\v/vendor_range_field.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>VendNumRangeVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(VendorStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="VendorStarting">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>13</TabOrder>
+               <TopPos>10</TopPos>
+               <LeftPos>16</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>C(VendorStatic)</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.VendorStarting</DataSource>
+               <Binding>6</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>sl_goto.htm#Fields\v/vendor_range_field.htm</HelpFileName>
+               <HelpContextID>-1</HelpContextID>
+               <DefaultFrom>VendNumRangeVar()</DefaultFrom>
+               <Post301Format>AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(VendorStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="VendorStatic">
+               <DeviceID>-1</DeviceID>
+               <Type>0</Type>
+               <TabOrder>22</TabOrder>
+               <TopPos>10.2666666666667</TopPos>
+               <LeftPos>2.461905</LeftPos>
+               <Height>1</Height>
+               <ListHeight>0</ListHeight>
+               <Width>13</Width>
+               <Caption>sVendor</Caption>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <Binding>0</Binding>
+               <Flags>0</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpContextID>0</HelpContextID>
+               <Post301Format>AUTOIME(NoControl) JUSTIFY(R)</Post301Format>
+               <EffectiveCaption>sVendor</EffectiveCaption>
+            </Component>
+            <Component Name="xCategory">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>8.26666666666667</TopPos>
+               <LeftPos>16</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>C(CategoryStatic)</Caption>
+               <Validators>Category(VCDescription,PurAcct,PurAcctUnit1,PurAcctUnit2,PurAcctUnit3,PurAcctUnit4)</Validators>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.xCategory</DataSource>
+               <Binding>6</Binding>
+               <SelectionEvent>VendCatChg</SelectionEvent>
+               <ComboListSource>STDOLE SL.SLVendCats(  PROPERTIES(Category, Description, PurAcct, PurAcctUnit1, PurAcctUnit2, PurAcctUnit3, PurAcctUnit4) DISPLAY(1,2,3,4,5,6,7) )</ComboListSource>
+               <Flags>32</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>vendor.chm</HelpFileName>
+               <HelpContextID>900031770</HelpContextID>
+               <Post301Format>BTF() AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(CategoryStatic)</EffectiveCaption>
+            </Component>
+            <Component Name="yCategory">
+               <DeviceID>-1</DeviceID>
+               <Type>27</Type>
+               <TabOrder>0</TabOrder>
+               <TopPos>8.26666666666667</TopPos>
+               <LeftPos>62</LeftPos>
+               <Height>1.3</Height>
+               <ListHeight>0</ListHeight>
+               <Width>10</Width>
+               <Caption>C(CategoryStatic)</Caption>
+               <Validators>Category(VCDescription,PurAcct,PurAcctUnit1,PurAcctUnit2,PurAcctUnit3,PurAcctUnit4)</Validators>
+               <MaxCharacters>0</MaxCharacters>
+               <ContainerName />
+               <ContainerSequence>0</ContainerSequence>
+               <DataSource>variables.yCategory</DataSource>
+               <Binding>6</Binding>
+               <SelectionEvent>VendCatChg</SelectionEvent>
+               <ComboListSource>STDOLE SL.SLVendCats(  PROPERTIES(Category, Description, PurAcct, PurAcctUnit1, PurAcctUnit2, PurAcctUnit3, PurAcctUnit4) DISPLAY(1,2,3,4,5,6,7) )</ComboListSource>
+               <Flags>32</Flags>
+               <ReadOnly>False</ReadOnly>
+               <Hidden>False</Hidden>
+               <HelpFileName>vendor.chm</HelpFileName>
+               <HelpContextID>900031770</HelpContextID>
+               <Post301Format>BTF() AUTOIME(NoControl)</Post301Format>
+               <EffectiveCaption>C(CategoryStatic)</EffectiveCaption>
+            </Component>
+         </Components>
+         <EventHandlers>
+            <EventHandler Name="GenerateReport" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>ValidateSiteGroup()</Response>
+            </EventHandler>
+            <EventHandler Name="GenerateReport" Sequence="1">
+               <ResponseType>8</ResponseType>
+               <Response>SetDateOffset(AgingDate,AgingDateOffset,AgingDateIncrement,CutoffDate,CutoffDateOffset,CutoffDateIncrement)</Response>
+            </EventHandler>
+            <EventHandler Name="GenerateReport" Sequence="2">
+               <ResponseType>19</ResponseType>
+               <Response>TASKNAME(V(BGTaskName))TASKPARMS(V(BGTaskParms))TASKSTATUS(V(BGTaskStatus))TASKNUMBER(BGTaskNumber) ERRORMESSAGE(mBackEndMessage)</Response>
+            </EventHandler>
+            <EventHandler Name="GenerateReport" Sequence="3">
+               <ResponseType>8</ResponseType>
+               <Response>ReportSubmitted()</Response>
+            </EventHandler>
+            <EventHandler Name="GoToActivitiesFolder" Sequence="0">
+               <ResponseType>41</ResponseType>
+               <Response>MASTER/xFinance/xAccountsPayable/xActivities</Response>
+            </EventHandler>
+            <EventHandler Name="GoToFilesFolder" Sequence="0">
+               <ResponseType>41</ResponseType>
+               <Response>MASTER/xFinance/xAccountsPayable/xFiles</Response>
+            </EventHandler>
+            <EventHandler Name="GoToMaintenanceFolder" Sequence="0">
+               <ResponseType>41</ResponseType>
+               <Response>MASTER/xFinance/xAccountsPayable</Response>
+            </EventHandler>
+            <EventHandler Name="GoToQueriesFolder" Sequence="0">
+               <ResponseType>41</ResponseType>
+               <Response>MASTER/xFinance/xAccountsPayable/xQueries</Response>
+            </EventHandler>
+            <EventHandler Name="GoToReportsFolder" Sequence="0">
+               <ResponseType>41</ResponseType>
+               <Response>MASTER/xFinance/xAccountsPayable/xReports</Response>
+            </EventHandler>
+            <EventHandler Name="GoToUtilitiesFolder" Sequence="0">
+               <ResponseType>41</ResponseType>
+               <Response>MASTER/xFinance/xAccountsPayable/xUtilities</Response>
+            </EventHandler>
+            <EventHandler Name="PreviewReport" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>ValidateSiteGroup()</Response>
+            </EventHandler>
+            <EventHandler Name="PreviewReport" Sequence="1">
+               <ResponseType>8</ResponseType>
+               <Response>SetDateOffset(AgingDate,AgingDateOffset,AgingDateIncrement,CutoffDate,CutoffDateOffset,CutoffDateIncrement)</Response>
+            </EventHandler>
+            <EventHandler Name="PreviewReport" Sequence="2">
+               <ResponseType>40</ResponseType>
+               <Response>TASKNAME(V(BGTaskName))TASKPARMS(V(BGTaskParms)) ERRORMESSAGE(mPrintPreviewError)</Response>
+            </EventHandler>
+            <EventHandler Name="PrintAllPostedChanged" Sequence="0">
+               <ResponseType>35</ResponseType>
+               <Response>PrintAllPostedTransactionChanged()</Response>
+            </EventHandler>
+            <EventHandler Name="RunBackgroundQueue" Sequence="0">
+               <ResponseType>3</ResponseType>
+               <Response>BackgroundQueue( OKCANCELOPTIONAL() SETVARVALUES(BGTaskName=V(BGTaskName), RunTaskEvent=GenerateReport) )</Response>
+            </EventHandler>
+            <EventHandler Name="RunGetOptions" Sequence="0">
+               <ResponseType>3</ResponseType>
+               <Response>GetOptions(OKCANCELOPTIONAL())</Response>
+            </EventHandler>
+            <EventHandler Name="RunStoreOptions" Sequence="0">
+               <ResponseType>3</ResponseType>
+               <Response>StoreOptions(OKCANCELOPTIONAL())</Response>
+            </EventHandler>
+            <EventHandler Name="SelectPrinter" Sequence="0">
+               <ResponseType>3</ResponseType>
+               <Response>ReportOptions( OKCANCELOPTIONAL() )</Response>
+            </EventHandler>
+            <EventHandler Name="StdFormPredisplay" Sequence="0">
+               <ResponseType>0</ResponseType>
+               <Response>SL.SLParms.GetAPAgeDaysSP( PARMS(RVAR V(Days0), RVAR V(Days0Description), RVAR V(Days1), RVAR V(Days1Description), RVAR V(Days2), RVAR V(Days2Description), RVAR V(Days3), RVAR V(Days3Description), RVAR V(Days4), RVAR V(Days4Description)) )</Response>
+            </EventHandler>
+            <EventHandler Name="StdFormPredisplay" Sequence="1">
+               <ResponseType>0</ResponseType>
+               <Response>SL.SLParms.GetAgingBasisSp( PARMS(RVAR V(ArparmInvDue), RVAR V(ApparmInvDue)) )</Response>
+            </EventHandler>
+            <EventHandler Name="StdFormPredisplay" Sequence="2">
+               <ResponseType>22</ResponseType>
+               <Response> SETVARVALUES(AgingBasis=V(ApparmInvDue))</Response>
+            </EventHandler>
+         </EventHandlers>
+         <Variables>
+            <Variable Name="BGTaskName">
+               <Value>PPCC_AccountsPayableAgingReport</Value>
+               <Value2 />
+               <Value3 />
+               <Description />
+            </Variable>
+            <Variable Name="BGTaskParms">
+               <Value>V(VendorStarting),V(VendorEnding),V(NameStarting),V(NameEnding),V(CurrencyCodeStarting),V(CurrencyCodeEnding),V(SiteGroup),V(AgingDateOffset),V(CutoffDateOffset),V(PrintAll),V(PrintOpenPayments),V(Suppress),V(Translate),V(UseHist),V(AgingBucket),V(AgingBasis),V(PaymentHold),V(ShowAct),V(SortByCurrency),V(SortBy),V(Days0),V(Days1),V(Days2),V(Days3),V(Days4),V(Days0Description),V(Days1Description),V(Days2Description),V(Days3Description),V(Days4Description),V(DateNullVar),V(DateNullVar),V(DisplayHe</Value>
+               <Value2>ader),V(ConsolidateVendors),BG~TASKID~,V(xCategory),V(yCategory)</Value2>
+               <Value3 />
+               <Description />
+            </Variable>
+         </Variables>
+         <Script Language="Visual Basic">
+            <ScriptLines>
+               <ScriptLine>Option Explicit On</ScriptLine>
+               <ScriptLine>Option Strict On</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>Imports System</ScriptLine>
+               <ScriptLine>Imports Microsoft.VisualBasic</ScriptLine>
+               <ScriptLine>Imports Mongoose.IDO.Protocol</ScriptLine>
+               <ScriptLine>Imports Mongoose.Scripting</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>Namespace Mongoose.FormScripts</ScriptLine>
+               <ScriptLine>    Public Class PPCC_AccountsPayableAgingReport</ScriptLine>
+               <ScriptLine>        Inherits FormScript</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>        Sub APPaymentDistReturned()</ScriptLine>
+               <ScriptLine>            Dim strInvoiceNum As String</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            If ((ThisForm.LastModalChildEndedOk) And _</ScriptLine>
+               <ScriptLine>              (ThisForm.LastModalChildName = "APPaymentDistribution")) Then</ScriptLine>
+               <ScriptLine>                strInvoiceNum = ThisForm.ModalChildForm.PrimaryIDOCollection.GetCurrentObjectProperty("InvoiceNum")</ScriptLine>
+               <ScriptLine>                ThisForm.Components("StartingInvoiceNum").Text = strInvoiceNum</ScriptLine>
+               <ScriptLine>            End If</ScriptLine>
+               <ScriptLine>        End Sub</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>        Function ValidateSiteGroup() As Integer</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>            If ThisForm.Components("SiteGroup").ValidateData(True) Then</ScriptLine>
+               <ScriptLine>                ValidateSiteGroup = 0</ScriptLine>
+               <ScriptLine>            Else</ScriptLine>
+               <ScriptLine>                ValidateSiteGroup = 1</ScriptLine>
+               <ScriptLine>            End If</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>        End Function</ScriptLine>
+               <ScriptLine />
+               <ScriptLine>        Sub PrintAllPostedTransactionChanged()</ScriptLine>
+               <ScriptLine>            ThisForm.Components("PrintOpenPaymentsCheck").Enabled = CBool(IIf(ThisForm.Components("PrintAll").Text = "0", False, True))</ScriptLine>
+               <ScriptLine>            ThisForm.Variables("PrintOpenPayments").Value = ThisForm.Variables("PrintAll").Value</ScriptLine>
+               <ScriptLine>        End Sub</ScriptLine>
+               <ScriptLine>    End Class</ScriptLine>
+               <ScriptLine>End Namespace</ScriptLine>
+            </ScriptLines>
+         </Script>
+      </Form>
+   </Forms>
+</FormsAndObjectsExport>
